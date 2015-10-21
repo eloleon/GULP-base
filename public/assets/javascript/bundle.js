@@ -1,0 +1,6 @@
+function elo() {
+	return "elo elo"
+}
+
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvdXJhZ2UuanMiLCJwb3dlci5qcyIsIndpc2RvbS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUNGQTtBQ0FBIiwiZmlsZSI6ImJ1bmRsZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIGVsbygpIHtcclxuXHRyZXR1cm4gXCJlbG8gZWxvXCJcclxufSIsIiIsIiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

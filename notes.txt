@@ -1,0 +1,27 @@
+1. Install Gulp Globally 			npm install --global gulp
+2. Install Gulp In devDependencies 	npm install --save-dev gulp
+3. Create a gulpfile.js 			npm install --save-dev gulp-util
+	(other dependencies can be found via package.json file)
+	
+Top level functions of GULP (4):
+gulp.task - defines your tasks. Its arguments are name, deps and fn.
+
+	gulp.task('mytask', function() {
+	//do stuff
+	});
+	
+	gulp.task('dependenttask', ['mytask'], function() {
+	//do stuff after 'mytask' is done.
+	});
+
+gulp.src - files we want to use. Parameters: globs and an optional options object. It uses .pipe for chaining it's output into other plugins.
+
+gulp.dest - destination folder for output files.
+	gulp.task('copyHtml', function() {
+	// copy any html files in source/ to public/
+		gulp.src('source/*.html')
+			.pipe(gulp.dest('public'));
+	});
+gulp.watch - has two main forms, which return an EventEmitter that emits change events. The first of which takes a glob, an optional options object, and an array of tasks as it's parameters.
+
+	gulp.watch('source/javascript/**/*.js', ['jshint']);
